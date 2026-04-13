@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timo's Mission</title>
+    <link rel="stylesheet" href="Css/style.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="header__logo">
+            <img class="header__logo-img" src="imgs/Title.png" alt="Timo's Mission - Logo">
+        </div>
+
+        <nav class="header__nav">
+            <ul class="nav__list">
+                <li class="nav__item"><a class="nav__link" href="index.html">Página Inicial</a></li>
+                <li class="nav__item"><a class="nav__link" href="galeria.html">Galeria</a></li>
+                <li class="nav__item"><a class="nav__link" href="sobre.html">Saiba Mais</a></li>
+                <li class="nav__item">
+                    <button class="nav__link nav__link--tema" id="btn-tema" onclick="alternarTema()">🌙 Tema Escuro</button>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main">
+
+
+        <div class="main__game" id="conteudo-restrito">
+            <iframe class="main__game-frame" src="../Jogo/index.html" width="100%" height="480" title="Timo's Mission"></iframe>
+        </div>
+
+        <div class="main__aviso" id="aviso-idade" style="display:none;">
+            <p>⚠️ Acesso restrito. Você precisa ter 12 anos ou mais para jogar.</p>
+        </div>
+
+        <div class="main__content">
+
+            <article class="card">
+                <h3 class="card__title">Sobre o Jogo</h3>
+                <p class="card__text">O jogo se trata de uma curta jornada de um guerreiro em busca da bela donzela, V</p>
+            </article>
+
+            <article class="card">
+                <h3 class="card__title">Inspirações</h3>
+                <ul class="card__list">
+                    <li class="card__list-item">
+                        <p class="card__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis repudiandae cupiditate
+                            praesentium corporis dicta at optio animi illum harum enim? Voluptatem ullam facilis aspernatur
+                            hic nesciunt dolor et dicta fugiat.</p>
+                    </li>
+                    <li class="card__list-item">
+                        <p class="card__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis repudiandae cupiditate
+                            praesentium corporis dicta at optio animi illum harum enim? Voluptatem ullam facilis aspernatur
+                            hic nesciunt dolor et dicta fugiat.</p>
+                    </li>
+                    <li class="card__list-item">
+                        <p class="card__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis repudiandae cupiditate
+                            praesentium corporis dicta at optio animi illum harum enim? Voluptatem ullam facilis aspernatur
+                            hic nesciunt dolor et dicta fugiat.</p>
+                    </li>
+                </ul>
+            </article>
+
+            <article class="card">
+                <h3 class="card__title">Sobre o Desenvolvedor</h3>
+                <p class="card__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates assumenda vero ea possimus, repellat,
+                    quam sed atque optio ipsam amet neque natus reprehenderit, minus nobis earum esse. Tempora, sit error.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut perspiciatis quae deserunt ratione! Eveniet
+                    nam, culpa, commodi quidem quos atque veritatis voluptatem libero minima corporis eligendi provident
+                    reprehenderit. Voluptatibus, quos?</p>
+            </article>
+
+            <article class="card">
+                <h3 class="card__title">Mais Sobre o Jogo</h3>
+                <p class="card__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates assumenda vero ea possimus, repellat,
+                    quam sed atque optio ipsam amet neque natus reprehenderit, minus nobis earum esse. Tempora, sit error.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut perspiciatis quae deserunt ratione! Eveniet
+                    nam, culpa, commodi quidem quos atque veritatis voluptatem libero minima corporis eligendi provident
+                    reprehenderit. Voluptatibus, quos?</p>
+            </article>
+
+        </div>
+
+    </main>
+
+    <footer class="footer">
+        <ul class="footer__socials">
+            <li class="footer__social-item">
+                <a class="footer__social-link" href="">
+                    <img class="footer__social-img" src="imgs/icons/facebook.png" alt="Facebook">
+                </a>
+            </li>
+            <li class="footer__social-item">
+                <a class="footer__social-link" href="">
+                    <img class="footer__social-img" src="imgs/icons/github.png" alt="GitHub">
+                </a>
+            </li>
+            <li class="footer__social-item">
+                <a class="footer__social-link" href="">
+                    <img class="footer__social-img" src="imgs/icons/instagram.png" alt="Instagram">
+                </a>
+            </li>
+            <li class="footer__social-item">
+                <a class="footer__social-link" href="">
+                    <img class="footer__social-img" src="imgs/icons/linkedin.png" alt="LinkedIn">
+                </a>
+            </li>
+        </ul>
+        <p class="footer__copy">© 2026 - Timos's Mission</p>
+    </footer>
+
+    <script>
+    let temaEscuro = true;
+    function alternarTema() {
+        const btn = document.getElementById("btn-tema");
+        temaEscuro = !temaEscuro;
+        document.body.classList.toggle("tema-claro", !temaEscuro);
+        btn.textContent = temaEscuro ? "🌙 Tema Escuro" : "☀️ Tema Claro";
+    }
+    </script>
+
+
+</body>
+
+</html>
