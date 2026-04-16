@@ -134,7 +134,6 @@
     text-transform: uppercase;
 }
 
-/* Lightbox */
 .lightbox {
     display: none;
     position: fixed;
@@ -208,7 +207,6 @@ body.tema-claro .page-hero__sub {
     color: #444870;
 }
 
-/* Responsivo */
 @media (min-width: 480px) {
     .galeria__grid {
         grid-template-columns: repeat(3, 1fr);

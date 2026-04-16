@@ -238,7 +238,6 @@ body.tema-claro .dev__link {
     border-color: rgba(17, 21, 66, 0.2);
 }
 
-/* Responsivo */
 @media (min-width: 480px) {
     .sobre__content {
         padding: 0 32px 80px;
