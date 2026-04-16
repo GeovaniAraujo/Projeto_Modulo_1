@@ -5,26 +5,17 @@ const totalFases = 5;
 const personagemPrincipal = "Timo";
 const descricaoCurta = "Uma curta jornada de um guerreiro em busca da bela donzela.";
 
-let idadeDigitada = prompt("Bem-vindo a " + nomeJogo + "! Digite sua idade para continuar:");
+document.getElementById("nome__jogo").textContent = nomeJogo;
+document.getElementById("genero__jogo").textContent = genero;
+document.getElementById("plataforma__jogo").textContent = plataforma;
+document.getElementById("total__fases").textContent = totalFases;
+document.getElementById("personagem__principal").textContent = personagemPrincipal;
+document.getElementById("descricao__jogo").textContent = descricaoCurta;
 
-const conteudoRestrito = document.getElementById("conteudo-restrito");
-const avisoIdade = document.getElementById("aviso-idade");
-const idade = parseInt(idadeDigitada);
-
-if (isNaN(idade)) {
-    alert("Entrada inválida. O acesso ao jogo será bloqueado.");
-    conteudoRestrito.style.filter = "blur(8px)";
-    conteudoRestrito.style.pointerEvents = "none";
-    avisoIdade.style.display = "block";
-
-} else if (idade >= 12) {
-    alert("✅ Acesso liberado! Boa aventura, jogador!");
-    conteudoRestrito.style.filter = "none";
-    avisoIdade.style.display = "none";
-
-} else {
-    alert("⛔ Acesso negado. Você precisa ter pelo menos 12 anos para jogar " + nomeJogo + ".");
-    conteudoRestrito.style.filter = "blur(8px)";
-    conteudoRestrito.style.pointerEvents = "none";
-    avisoIdade.style.display = "block";
+let temaEscuro = true;
+function alternarTema() {
+    const btn = document.getElementById("btn-tema");
+    temaEscuro = !temaEscuro;
+    document.body.classList.toggle("tema-claro", !temaEscuro);
+    btn.textContent = temaEscuro ? "🌙 Tema Escuro" : "☀️ Tema Claro";
 }

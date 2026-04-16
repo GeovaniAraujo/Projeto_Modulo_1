@@ -66,14 +66,14 @@
                     <ul class="ficha__lista">
                         <li class="ficha__item">
                             <span class="ficha__label">Nome</span>
-                            <span class="ficha__valor">Timo's Mission</span>
+                            <span class="ficha__valor" id="nome__jogo"></span>
                         </li>
                         <li class="ficha__item">
                             <span class="ficha__label">Gênero</span>
-                            <span class="ficha__valor">Action RPG</span>
+                            <span class="ficha__valor" id="genero__jogo"></span>
                         </li>
                         <li class="ficha__item">
-                            <span class="ficha__label">Plataforma</span>
+                            <span class="ficha__label" id="plataforma__jogo"></span>
                             <span class="ficha__valor">Web (HTML5)</span>
                         </li>
                         <li class="ficha__item">
@@ -82,11 +82,11 @@
                         </li>
                         <li class="ficha__item">
                             <span class="ficha__label">Fases</span>
-                            <span class="ficha__valor">3</span>
+                            <span class="ficha__valor" id="total__fases"></span>
                         </li>
                         <li class="ficha__item">
                             <span class="ficha__label">Protagonista</span>
-                            <span class="ficha__valor">Timo</span>
+                            <span class="ficha__valor" id="personagem__principal"></span>
                         </li>
                         <li class="ficha__item">
                             <span class="ficha__label">Ano</span>
@@ -96,7 +96,6 @@
                 </div>
             </section>
 
-            <!-- Personagens -->
             <section class="sobre__section">
                 <div class="sobre__section-header">
                     <span class="sobre__numero">03</span>
@@ -201,15 +200,7 @@
         <p class="footer__copy">© 2026 - Timos's Mission</p>
     </footer>
 
-    <script>
-        let temaEscuro = true;
-        function alternarTema() {
-            const btn = document.getElementById("btn-tema");
-            temaEscuro = !temaEscuro;
-            document.body.classList.toggle("tema-claro", !temaEscuro);
-            btn.textContent = temaEscuro ? "🌙 Tema Escuro" : "☀️ Tema Claro";
-        }
-    </script>
+    <script src="Js/scripts.js"></script>
 
 </body>
 </html>

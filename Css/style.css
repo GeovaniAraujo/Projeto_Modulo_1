@@ -71,12 +71,6 @@ body.tema-claro .footer__copy {
     color: #444870;
 }
 
-body.tema-claro .saudacao__input {
-    background-color: #ffffff;
-    color: #111542;
-    border-color: rgba(17, 21, 66, 0.25);
-}
-
 .header {
     background-color: #131C43;
     padding: 16px 20px 0;
@@ -159,11 +153,6 @@ body.tema-claro .saudacao__input {
 
 .main {
     flex: 1;
-}
-
-.main__cta {
-    text-align: center;
-    padding: 28px 16px;
 }
 
 .btn {

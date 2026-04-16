@@ -29,13 +29,8 @@
 
     <main class="main">
 
-
         <div class="main__game" id="conteudo-restrito">
             <iframe class="main__game-frame" src="Jogo/index.html" width="100%" height="480" title="Timo's Mission"></iframe>
-        </div>
-
-        <div class="main__aviso" id="aviso-idade" style="display:none;">
-            <p>⚠️ Acesso restrito. Você precisa ter 12 anos ou mais para jogar.</p>
         </div>
 
         <div class="main__content">
@@ -61,8 +56,8 @@
             </article>
 
             <article class="card">
-                <h3 class="card__title">Sobre o Desenvolvedor</h3>
-                <p class="card__text">
+                <h3 class="card_title">Sobre o Desenvolvedor</h3>
+                <p class="card_text">
                     Estudante do curso de Técnica em Análise de Desenvolvimento de Sistemas no Centro de Ensino Integrado, desenvolvedor do jogo Timo's Mission e aluno favorito do Ivan.
                 </p>
             </article>
@@ -72,24 +67,24 @@
     </main>
 
     <footer class="footer">
-        <ul class="footer__socials">
-            <li class="footer__social-item">
-                <a class="footer__social-link" href="">
+        <ul class="footer_socials">
+            <li class="footer_social-item">
+                <a class="footer__social-link" href="https://www.facebook.com/geovani.araujo.77985/">
                     <img class="footer__social-img" src="imgs/icons/facebook.png" alt="Facebook">
                 </a>
             </li>
-            <li class="footer__social-item">
-                <a class="footer__social-link" href="">
+            <li class="footer_social-item">
+                <a class="footer_social-link" href="https://github.com/GeovaniAraujo?tab=repositories">
                     <img class="footer__social-img" src="imgs/icons/github.png" alt="GitHub">
                 </a>
             </li>
             <li class="footer__social-item">
-                <a class="footer__social-link" href="">
+                <a class="footer__social-link" href="https://www.instagram.com/geovani_araujo_smaha/">
                     <img class="footer__social-img" src="imgs/icons/instagram.png" alt="Instagram">
                 </a>
             </li>
             <li class="footer__social-item">
-                <a class="footer__social-link" href="">
+                <a class="footer__social-link" href="https://www.linkedin.com/in/geovani-araujo-smaha-78b213327/">
                     <img class="footer__social-img" src="imgs/icons/linkedin.png" alt="LinkedIn">
                 </a>
             </li>
@@ -97,16 +92,7 @@
         <p class="footer__copy">© 2026 - Timos's Mission</p>
     </footer>
 
-    <script>
-    let temaEscuro = true;
-    function alternarTema() {
-        const btn = document.getElementById("btn-tema");
-        temaEscuro = !temaEscuro;
-        document.body.classList.toggle("tema-claro", !temaEscuro);
-        btn.textContent = temaEscuro ? "🌙 Tema Escuro" : "☀️ Tema Claro";
-    }
-    </script>
-
+    <script src="Js/scripts.js"></script>
 
 </body>
 
